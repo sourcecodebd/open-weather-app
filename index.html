@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Open Weather App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Icon -->
+    <link rel="icon" sizes="192x192" type=image/x-icon" href="images/temp.ico">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            /* background: url(images/bg-image-night.jpg) no-repeat; */
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input type="text" id="search-input" class="form-control"
+                    placeholder="Enter a location for Weather ...">
+                <div class="input-group-append">
+                    <button onclick="loadWeather()" type="button" class="btn btn-danger">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="spinner-grow text-dark" role="status">
+                <span class="visually-hidden"></span>
+            </div>
+        </div>
+        <div class="weather-status text-white text-center">
+            <div id="search-error"></div>
+            <h1 id="not-found"></h1>
+            <div id="search-result">
+                <div id="weather-img"></div>
+                <h1 id="city"></h1>
+                <h3 id="country">Analyze Weather By Location</h3>
+                <h4 id="coord"></h4>
+                <h4 id="temp"><span></span></h4>
+                <h1 id="condition" class="lead"></h1>
+            </div>
+        </div>
+        <footer class="text-uppercase text-white fixed-bottom">
+            <p class="text-center">CopyRight &copy; <span id="year"></span> | All Rights Reserved By</p>
+            <p class="text-center">Nafi Mahmud</p>
+        </footer>
+        <!-- <script src="js/weather.js"></script> -->
+        <script src="js/weatherNew.js"></script>
+        <script>
+            const d = new Date();
+            document.getElementById("year").innerText = d.getFullYear();
+        </script>
+</body>
+
+</html>
