@@ -81,7 +81,7 @@ const displayCurrentLocation = (currentCity) => {
     setTimeout(() => { loader.style.display = 'none'; processer(currentCity); }, 2000);
     loader.style.display = 'block';
     weatherBackground(currentCity);
-    document.body.style.background = 'url(./images/bg-image.jpg)';
+    document.body.style.background = 'url(../images/bg-image.jpg)';
 }
 
 const displayError = (err) => {
