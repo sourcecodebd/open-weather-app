@@ -1,3 +1,4 @@
+document.body.style.background = 'url(./images/bg-image.jpg)';
 const loader = document.querySelector('.spinner-grow');
 loader.style.display = 'none';
 const searchResult = document.getElementById('search-result');
@@ -81,7 +82,6 @@ const displayCurrentLocation = (currentCity) => {
     setTimeout(() => { loader.style.display = 'none'; processer(currentCity); }, 2000);
     loader.style.display = 'block';
     weatherBackground(currentCity);
-    document.body.style.background = 'url(../images/bg-image.jpg)';
 }
 
 const displayError = (err) => {
@@ -90,7 +90,6 @@ const displayError = (err) => {
     searchResult.style.display = 'none';
     searchError.style.display = 'block';
     searchError.innerText = `Something Went Wrong!`;
-    document.body.style.background = 'url(../images/bg-image.jpg)';
     setTimeout(() => {
         searchError.innerText = ``;
     }, 3000);
