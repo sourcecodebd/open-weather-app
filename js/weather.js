@@ -17,7 +17,7 @@ const loadWeather = () => {
         alert('Enter A City First!');
     }
     else {
-        const url = `http://api.openweathermap.org/data/2.5/weather?q=${searchText}&appid=23a47d1564c036c9eed3cd3394962803`;
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchText}&appid=23a47d1564c036c9eed3cd3394962803`;
 
 
         fetch(url)
@@ -43,7 +43,7 @@ const loadWeather = () => {
 }
 
 const loadCurrentLocation = async () => {
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=Dhaka&appid=23a47d1564c036c9eed3cd3394962803`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=Dhaka&appid=23a47d1564c036c9eed3cd3394962803`;
     const res = await fetch(url)
     const data = await res.json();
     displayCurrentLocation(data);
