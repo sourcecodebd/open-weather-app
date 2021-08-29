@@ -109,11 +109,11 @@ const weatherBackground = background => {
             }
             else if (bg.main == 'Rain') {
                 console.log(bg.main == 'Rain');
-                document.body.style.background = 'url(./images/bg-image-rain.jpg) no-repeat';
+                document.body.style.background = 'url(./images/bg-image-rain.jpg) repeat';
             }
             else if (bg.main == 'Drizzle') {
                 console.log(bg.main == 'Drizzle');
-                document.body.style.background = 'url(./images/bg-image-rain.jpg) no-repeat';
+                document.body.style.background = 'url(./images/bg-image-rain.jpg) repeat';
             }
             else if (bg.main == 'Mist') {
                 console.log(bg.main == 'Mist');
