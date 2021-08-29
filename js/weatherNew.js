@@ -90,7 +90,7 @@ const displayError = (err) => {
     searchResult.style.display = 'none';
     searchError.style.display = 'block';
     searchError.innerText = `Something Went Wrong!`;
-    document.body.style.background = 'url(./images/bg-image.jpg)';
+    document.body.style.background = 'url(../images/bg-image.jpg)';
     setTimeout(() => {
         searchError.innerText = ``;
     }, 3000);
