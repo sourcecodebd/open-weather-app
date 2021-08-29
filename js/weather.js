@@ -125,6 +125,10 @@ const weatherBackground = background => {
                 console.log(bg.main == 'Rain');
                 document.body.style.background = 'url(./images/bg-image-rain.jpg) no-repeat';
             }
+            else if (bg.main == 'Drizzle') {
+                console.log(bg.main == 'Drizzle');
+                document.body.style.background = 'url(./images/bg-image-rain.jpg) no-repeat';
+            }
             else if (bg.main == 'Mist') {
                 console.log(bg.main == 'Mist');
                 document.body.style.background = 'url(./images/bg-image-mist.jpg) no-repeat';
